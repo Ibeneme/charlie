@@ -536,8 +536,8 @@ export default function Portfolio({ onOpenModal }: PortfolioProps) {
             build.
           </p>
 
-          <button
-            onClick={onOpenModal}
+          <a
+            href={"https://wa.me/2348089557692"}
             className="group mt-9 inline-flex items-center gap-3 rounded-full bg-lime-400 pl-7 pr-2 py-2 text-sm font-semibold text-slate-950 transition-colors hover:bg-lime-300 active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-300 cursor-pointer"
           >
             Get in touch
@@ -547,7 +547,7 @@ export default function Portfolio({ onOpenModal }: PortfolioProps) {
                 aria-hidden="true"
               />
             </span>
-          </button>
+          </a>
         </div>
       </section>
     </div>
