@@ -5,9 +5,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-interface AboutPageProps {
-  onOpenModal?: (e: React.MouseEvent) => void;
-}
 
 const journey = [
   {
@@ -158,7 +155,7 @@ function Stat({
 
 /* ---------- page ---------- */
 
-export default function AboutPage({ onOpenModal }: AboutPageProps) {
+export default function AboutPage() {
   const mainRef = useRef<HTMLElement>(null);
   const { ref: statsRef, inView: statsInView } = useInView<HTMLElement>();
 
@@ -483,7 +480,7 @@ export default function AboutPage({ onOpenModal }: AboutPageProps) {
 
           <div className="mt-9 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4">
             <a
-              onClick={"https://wa.me/2348089557692"}
+              href={"https://wa.me/2348089557692"}
               className="group inline-flex items-center justify-center gap-3 rounded-full bg-lime-400 pl-6 pr-2 py-2 text-sm font-semibold text-slate-950 transition-all duration-300 hover:bg-lime-300 hover:shadow-[0_0_40px_rgba(163,230,53,0.4)] active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-300 cursor-pointer"
             >
               Get my free SEO audit
@@ -495,7 +492,7 @@ export default function AboutPage({ onOpenModal }: AboutPageProps) {
               </span>
             </a>
             <a
-              onClick={"https://wa.me/2348089557692"}
+              href={"https://wa.me/2348089557692"}
               className="inline-flex items-center justify-center rounded-full border border-slate-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-lime-400 hover:text-lime-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-300 cursor-pointer"
             >
               Book a dev consultation

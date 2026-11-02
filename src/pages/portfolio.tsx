@@ -32,9 +32,7 @@ interface Project {
   icon: typeof TrendingUp;
 }
 
-interface PortfolioProps {
-  onOpenModal?: (e: React.MouseEvent) => void;
-}
+
 
 const PROJECTS: Project[] = [
   {
@@ -144,7 +142,7 @@ const metricBorders = [
   "",
 ];
 
-export default function Portfolio({ onOpenModal }: PortfolioProps) {
+export default function Portfolio() {
   const [activeCategory, setActiveCategory] = useState<Category>("All");
 
   const filteredProjects =
